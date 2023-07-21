@@ -1,19 +1,14 @@
+let arr = [1, 2, 3]
 
-function checarDados(numero){
-let number = Number(numero);
-if(Number.isNaN(number)){
-return null;
+//caso o let arr = [1, 2, 3], a resposta seria 'O array está vazio '
+
+function iterarArray(arr){
+    if(arr.length == 0){
+throw new Error('O array está vazio')
 } else{
-return number;
+for(var i=0; i<arr.length; i++){
+    console.log(i)
+}  
 }
 }
-
-
-console.log(checarDados(5));
-
-console.log(checarDados('teste'));
-
-let number = prompt('digite somente numeros')
-console.log(checarDados(number));
-
-
+iterarArray(arr)
